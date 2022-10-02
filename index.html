@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fullpage.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Path Fitness</title>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <h3><a href="#page1"><img  id="serce" src="img/dumbbell.png">Path Fitness</a></h3>
+            
+            
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#page2" class="a0 ">BMI</a>
+            </li>
+            <li>
+                <a href="#page3" class="a1 ">Przepisy</a>
+            </li>
+            <li>
+                <a href="#page4" class="a2 ">Ćwiczenia</a>
+            </li>
+            <li>
+                <a href="#page5" class="a3 ">Porady</a>
+            </li>
+            <li>
+                <a href="#page6" class="a4 ">Suplementy</a>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="fullpage">
+        <section class="section s1" data-anchor="page1">
+            <div class="haslo">
+                <h2>Lorem Ipsum is simply dummy text.</h2>
+                <h3>Contrary to popular belief.</h3>
+            </div>
+            <img src="img/tlo24.png">
+            <div class="rozmycie"></div>
+            <div class="zaczynamy">Zaczynamy</div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="section s2" data-anchor="page2">
+           
+            <span class="panel-header">
+                <p><span>Body</span> <span>Mass</span> <span>Index</span></p>
+            </span>
+            <div class="BMI">
+
+                <div class="form">
+                    <input type="text" name="waga" autocomplete="off" required id="waga" />
+                    <label for="waga" class="label-name">
+                        <span class="content-name">Waga</span>
+                    </label>
+                </div>
+                <div class="form2">
+                    <input type="text" name="wzrost" autocomplete="off" required class="dwa" id="wzrost" />
+                    <label for="wzrost" class="label-name">
+                        <span class="content-name">Wzrost</span>
+                    </label>
+                </div>
+                <button class="button" type="submit" onclick="obliczBMI(); showDiv()">Oblicz</button>
+                </div>
+
+         
+            
+
+            <div id="wynik">
+                <h2>Twój wskaźnik masy ciała wynosi:</h2>
+                <span id="spanResult"></span>
+            </div>
+            <div id="wynik2">
+                <h2>Twoje BMI wskazuje na: </h2>
+                <span id="spanwskaz"></span>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <section class="section s3" data-anchor="page3">
+            <div class="main">
+
+                <div class="module">
+                    <div id="zdjecie">
+                        <img src="img/kurczak.jpg">
+                    </div>
+
+                    <div class="nazwadania"><span><b>Kurczak Curry</b></span></div>
+
+
+                    <div class="skladniki">
+                        <p><b>Składniki:</b><br>
+                            1 podwójna pierś z kurczaka - 650 g<br>
+                            1 spora czerwona papryka - 280 g<br>
+                            1 spora cebula - 250 g<br>
+                            1 średnia marchewka - 140 g<br>
+                            3 duże ząbki czosnku<br>
+                            mały kawałek świeżego imbiru - 4 cm<br>
+                            1 szklanka mleczka kokosowego <br>
+                            pół szklanki bulionu drobiowego <br>
+                            4 łyżki delikatnej oliwy<br>
+                            2 łyżki łagodnej pasty curry<br>
+                            1 łyżka przyprawy curry</p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div id="zdjecie">
+                        <img src="img/tiramisu.jpg">
+                    </div>
+                    <div class="nazwadania"><span><b>Zdrowe Tiramisu</b></span></div>
+                    <div class="skladniki">
+                        <p><b> Do przełożenia:</b><br>
+                            6 biszkoptów<br>
+                            łyżeczka kawy rozpuszczalnej<br>
+                            kakao do posypania<br>
+                            opcjonalnie: truskawki<br>
+                                <br>
+                            <b>Masa:</b><br>
+                            200 g twarożku domowego grani<br>
+                            125 g serka waniliowego <br>
+                            10-15 g słodziła (np. erytrol, ksylitol)<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="module">
+                    <div id="zdjecie">
+                        <img src="img/salad.jpg">
+                    </div>
+                    <div class="nazwadania"><span><b>Sałatka z jajkiem i kurczakiem</b></span></div>
+
+
+                    <div class="skladniki">
+                        <p><b>Składniki:</b><br>
+                            200-220 g filetów z piersi kurczaka<br>
+                            2 łyżki soku z cytryny<br>
+                            olej rzepakowy<br>
+                            1 ząbek czosnku<br>
+                            20 g filecików anchois<br>
+                            15 g parmezanu<br>
+                            75 g naturalnego jogurtu<br>
+                            1 łyżeczka musztardy<br>
+                            2 jajka ugotowane na twardo<br>
+                            natka pietruszki<br>
+                            6-8 pomidorków koktajlowych<br>
+                            1 nieduża sałata rzymska<br>
+                            2-3 kromki pełnoziarnistego chleba</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section s5" data-anchor="page5">
+            <div class="porady">
+                <div class="porada1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi aut culpa rerum ipsam unde sunt dolores error! Quisquam sapiente repudiandae tempora ducimus molestiae praesentium at itaque nulla laudantium odio. Quae explicabo maiores atque quod cum reiciendis exercitationem obcaecati consequatur.</p>
+                    <img src="img/1396823_circle_info_information_letter_icon.png">
+                </div>
+                <div class="porada2">  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi aut culpa rerum ipsam unde sunt dolores error! Quisquam sapiente repudiandae tempora ducimus molestiae praesentium at itaque nulla laudantium odio. Quae explicabo maiores atque quod cum reiciendis exercitationem obcaecati consequatur.</p>                    
+                    <img src="img/1396823_circle_info_information_letter_icon.png">
+                </div>
+                <div class="porada3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi aut culpa rerum ipsam unde sunt dolores error! Quisquam sapiente repudiandae tempora ducimus molestiae praesentium at itaque nulla laudantium odio. Quae explicabo maiores atque quod cum reiciendis exercitationem obcaecati consequatur.</p>                    
+                    <img src="img/1396823_circle_info_information_letter_icon.png">
+                </div>
+                <div class="porada4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi aut culpa rerum ipsam unde sunt dolores error! Quisquam sapiente repudiandae tempora ducimus molestiae praesentium at itaque nulla laudantium odio. Quae explicabo maiores atque quod cum reiciendis exercitationem obcaecati consequatur.</p>                    
+                    <img src="img/1396823_circle_info_information_letter_icon.png">
+                </div>
+            </div>
+            <div class="porada-zdj">
+            <img src="img/porada.jpg">
+            </div>
+        </section>
+        <section class="section s6" data-anchor="page6">
+            <h1>SHOP</h1>
+            <h3>It is a long established fact that a reader will be distracted by. </h3>
+            <div class="main2">
+                <div class="module2">
+                    <img src="./img/kreatyna.png">
+                    <div class="zolty"><p>KREATYNA</p></div>
+                    <p>67,90 zł</p>
+                </div>
+                <div class="module2">
+                        <img src="./img/vitamin.png">
+                        <div class="zolty"><p>WITAMINY</p></div>
+                        <p>7,90 zł</p>
+                </div>
+                <div class="module2">
+                    <img src="./img/protein.png">
+                        <div class="zolty"><p>BIAŁKO</p></div>
+                        <p>34,88 zł</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="fullpage.min.js"></script>
+    <script src="app.js"></script>
+    <script src="BMI.js"></script>
+    <script src="animation.js"></script>
+    <script src="/path/to/lib/jquery.waypoints.min.js"></script>
+    <script src="/path/to/shortcuts/inview.min.js"></script>
+</body>
+</html>
